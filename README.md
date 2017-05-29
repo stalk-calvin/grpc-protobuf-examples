@@ -1,6 +1,6 @@
 # gRPC with Protocol Buffers playground
 
-[![CI](https://travis-ci.org/stalk-calvin/grpc_protobuf.svg?branch=master)](https://travis-ci.org/stalk-calvin/grpc_protobuf)
+[![CI](https://travis-ci.org/stalk-calvin/grpc-protobuf-examples.svg?branch=master)](https://travis-ci.org/stalk-calvin/grpc-protobuf-examples)
 [![License](http://img.shields.io/:license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 This repository contains examples of gRPC with Protocol Buffers, gradle used for dependency management
