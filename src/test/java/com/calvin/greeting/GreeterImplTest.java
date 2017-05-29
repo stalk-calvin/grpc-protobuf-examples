@@ -1,4 +1,4 @@
-package com.calvin;
+package com.calvin.greeting;
 
 /*
  * Copyright Calvin Lee Since 2017.
@@ -7,6 +7,7 @@ package com.calvin;
 
 import static org.junit.Assert.assertEquals;
 
+import com.calvin.HelloReply;
 import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;

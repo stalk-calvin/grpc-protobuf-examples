@@ -1,10 +1,11 @@
-package com.calvin;
+package com.calvin.greeting;
 
 /*
  * Copyright Calvin Lee Since 2017.
  * All Rights Reserved.
  */
 
+import com.calvin.HelloReply;
 import io.grpc.stub.StreamObserver;
 
 public class GreeterImpl extends com.calvin.GreeterGrpc.GreeterImplBase {

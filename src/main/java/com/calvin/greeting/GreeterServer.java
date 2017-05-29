@@ -1,4 +1,4 @@
-package com.calvin;
+package com.calvin.greeting;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -45,5 +45,11 @@ public class GreeterServer {
         if (server != null) {
             server.awaitTermination();
         }
+    }
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        GreeterServer server = new GreeterServer();
+        server.start();
+        server.blockUntilShutdown();
     }
 }

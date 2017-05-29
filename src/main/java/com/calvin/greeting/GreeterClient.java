@@ -1,10 +1,14 @@
-package com.calvin;
+package com.calvin.greeting;
 
 /*
  * Copyright Calvin Lee Since 2017.
  * All Rights Reserved.
  */
 
+import com.calvin.GreeterGrpc;
+import com.calvin.GreeterGrpc.GreeterBlockingStub;
+import com.calvin.HelloReply;
+import com.calvin.HelloRequest;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
@@ -16,7 +20,7 @@ public class GreeterClient {
     private static final Logger logger = Logger.getLogger(GreeterClient.class.getName());
 
     private final ManagedChannel channel;
-    private final GreeterGrpc.GreeterBlockingStub blockingStub;
+    private final GreeterBlockingStub blockingStub;
 
     /** Construct client connecting to HelloWorld server at {@code host:port}. */
     public GreeterClient(String host, int port) {

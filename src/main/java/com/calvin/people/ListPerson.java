@@ -1,13 +1,15 @@
-package com.calvin;
+package com.calvin.people;
 
 /*
  * Copyright Calvin Lee Since 2017.
  * All Rights Reserved.
  */
 
+import com.calvin.AddressBook;
+import com.calvin.Person;
 import java.io.FileInputStream;
 
-class ListPeople {
+class ListPerson {
     // Iterates though all people in the AddressBook and prints info about them.
     private static void Print(AddressBook addressBook) {
         for (Person person: addressBook.getPeopleList()) {
@@ -38,7 +40,7 @@ class ListPeople {
     //   the information inside.
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
-            System.err.println("Usage:  ListPeople ADDRESS_BOOK_FILE");
+            System.err.println("Usage:  ListPerson ADDRESS_BOOK_FILE");
             System.exit(-1);
         }
 

@@ -1,10 +1,13 @@
-package com.calvin;
+package com.calvin.people;
 
 /*
  * Copyright Calvin Lee Since 2017.
  * All Rights Reserved.
  */
 
+import com.calvin.AddressBook;
+import com.calvin.AddressBook.Builder;
+import com.calvin.Person;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -66,7 +69,7 @@ class AddPerson {
             System.exit(-1);
         }
 
-        AddressBook.Builder addressBook = AddressBook.newBuilder();
+        Builder addressBook = AddressBook.newBuilder();
 
         // Read the existing address book.
         try {

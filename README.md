@@ -17,4 +17,16 @@ Calvin Lee, @stalk.calvin
 
 Dependancies are listed in the [build.gradle](https://raw.githubusercontent.com/stalk-calvin/grpc_protobuf/master/build.gradle) file. See dependancies tag.
 
+## Usage
+
+#### greeting
+
+1. Run server
+2. Run client (can be any language) to see print
+
+#### people
+
+1. Run AddPerson to add person by providing 'src/main/resources/people.txt' as argv to save data to src/main/resources/people.txt
+2. Run ListPerson to see the data serialized by with 'src/main/resources/people.txt' argv
+
 Enjoy!
